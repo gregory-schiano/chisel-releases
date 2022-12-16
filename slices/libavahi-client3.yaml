@@ -1,0 +1,10 @@
+package: libavahi-client3
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libavahi-common3_libs
+      - libdbus-1-3_libs
+    contents:
+      /usr/lib/*-linux-*/libavahi-client.so.*:

@@ -1,0 +1,12 @@
+package: libavahi-common3
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+    contents:
+      /usr/lib/*-linux-*/libavahi-common.so.*:
+  config:
+    essential:
+      - libavahi-common-data_config
+    contents:

@@ -1,0 +1,25 @@
+package: openjdk-11-jre-headless
+
+slices:
+  bins:
+    essential:
+      - ca-certificates-java_bins
+      - libcups2_libs
+      - liblcms2-2_libs
+      - libjpeg-turbo8_libs
+      - libfontconfig1_libs
+      - libnss3_libs
+      - libasound2_libs
+      - libc6_libs
+      - libfreetype6_libs
+      - libgcc-s1_libs
+      - libharfbuzz0b_libs
+      - libpcsclite1_libs
+      - libstdc++6_libs
+      - zlib1g_libs
+    contents:
+      /etc/java-11-openjdk/**:
+      /usr/lib/jvm/java-11-openjdk-*/bin/**:
+      /usr/lib/jvm/java-11-openjdk-*/conf/**:
+      /usr/lib/jvm/java-11-openjdk-*/legal/**:
+      /usr/lib/jvm/java-11-openjdk-*/lib/**:

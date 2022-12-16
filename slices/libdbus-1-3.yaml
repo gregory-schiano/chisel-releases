@@ -1,0 +1,9 @@
+package: libdbus-1-3
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libsystemd0_libs
+    contents:
+      /lib/*-linux-*/libdbus-1.so.*:

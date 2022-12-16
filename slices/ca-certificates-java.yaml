@@ -1,0 +1,12 @@
+package: ca-certificates-java
+
+slices:
+  bins:
+    essential:
+      - ca-certificates_certs
+      - libnss3_libs
+    contents:
+      /etc/ca-certificates/update.d/jks-keystore:
+      /etc/default/cacerts:
+      /usr/share/ca-certificates-java/ca-certificates-java.jar:
+      /etc/ssl/certs/java/: {make: true}

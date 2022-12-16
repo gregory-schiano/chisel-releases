@@ -1,0 +1,13 @@
+package: libcups2
+
+slices:
+  libs:
+    essential:
+      - libc6_libs
+      - libavahi-client3_libs
+      - libavahi-common3_libs
+      - libgnutls30_libs
+      - libgssapi-krb5-2_libs
+      - zlib1g_libs
+    contents:
+      /usr/lib/*-linux-*/libcups.so.*:

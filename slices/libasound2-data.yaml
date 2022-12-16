@@ -1,0 +1,6 @@
+package: libasound2-data
+
+slices:
+  config:
+    contents:
+      /usr/share/alsa/:

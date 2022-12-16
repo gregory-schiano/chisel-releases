@@ -1,0 +1,6 @@
+package: libavahi-common-data
+
+slices:
+  config:
+    contents:
+      /usr/lib/*-linux-*/avahi/service-types.db:
